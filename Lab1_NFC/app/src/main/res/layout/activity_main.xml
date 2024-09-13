@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/busbackground"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="#6E07407B"
+        android:backgroundTintMode="multiply"
+        android:text="Autobuso Konduktorius"
+        android:textAlignment="center"
+        android:textColor="@color/orange"
+        android:textSize="30dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="358dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/nfc_contents"
+            android:layout_width="match_parent"
+            android:layout_height="296dp"
+            android:background="#6E39567E"
+            android:backgroundTintMode="multiply"
+            android:gravity="center"
+            android:text="Pridėti miesto kortelę"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="57dp"
+            android:background="#6E07407B"
+            android:gravity="center"
+            android:text="Kortelės likutis (eur): ~"
+            android:textAlignment="inherit"
+            android:textColor="@color/orange"
+            android:textColorLink="#FFFFFF"
+            android:textSize="30dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:background="#C57FCDEE"
+        android:backgroundTint="#E5FFFFFF"
+        android:backgroundTintMode="multiply">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="194dp"
+            android:layout_height="65dp"
+            android:entries="@array/Spinner_items"
+            android:scrollbarSize="5dp"
+            android:spinnerMode="dropdown"
+            android:textAlignment="center"
+            android:textSize="50sp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="124dp"
+            android:layout_height="match_parent"
+            android:height="65dp"
+            android:elegantTextHeight="false"
+            android:text="Tikrinti bilietą" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:background="#C57FCDEE"
+        android:backgroundTintMode="multiply">
+
+        <TextView
+            android:layout_width="194dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Kaina: 10 eur"
+            android:textAlignment="inherit"
+            android:textSize="20dp">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="124dp"
+            android:layout_height="match_parent"
+            android:text="Pirkti dienos biletą" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="322dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10sp"
+        android:background="#C57FCDEE"
+        android:backgroundTintMode="multiply">
+
+        <TextView
+            android:layout_width="194dp"
+            android:layout_height="match_parent"
+            android:backgroundTintMode="multiply"
+            android:gravity="center"
+            android:text="Kaina: 1 eur"
+            android:textAlignment="inherit"
+            android:textSize="20dp"></TextView>
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="124dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20sp"
+            android:text="Pirkti valandos biletą" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10sp"
+        android:backgroundTintMode="multiply"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="321dp"
+            android:layout_height="match_parent"
+            android:background="#C57FCDEE"
+            android:backgroundTintMode="multiply"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/editTextCreditCount"
+                android:layout_width="194dp"
+                android:layout_height="61dp"
+                android:ems="10"
+                android:inputType="numberDecimal"
+                android:text="10"
+                android:textAlignment="center" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="124dp"
+                android:layout_height="match_parent"
+                android:text="Grąžinti pinigus" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30sp"
+            android:layout_weight="1"
+            android:background="@android:drawable/ic_menu_delete"
+            android:backgroundTint="#E01313"
+            android:foreground="?android:attr/activatedBackgroundIndicator"
+            android:visibility="visible"
+            app:srcCompat="?attr/selectableItemBackgroundBorderless" />
+
+    </LinearLayout>
+
+</LinearLayout>
