@@ -101,7 +101,7 @@
             android:id="@+id/button2"
             android:layout_width="124dp"
             android:layout_height="match_parent"
-            android:text="Pirkti dienos biletą" />
+            android:text="Pirkti dienos bilietą" />
 
     </LinearLayout>
 
@@ -126,7 +126,7 @@
             android:layout_width="124dp"
             android:layout_height="match_parent"
             android:layout_marginRight="20sp"
-            android:text="Pirkti valandos biletą" />
+            android:text="Pirkti valandos bilietą" />
 
     </LinearLayout>
 
@@ -162,9 +162,9 @@
 
         <ImageButton
             android:id="@+id/deleteButton"
-            android:layout_width="wrap_content"
+            android:layout_width="79dp"
             android:layout_height="match_parent"
-            android:layout_marginLeft="30sp"
+            android:layout_marginLeft="10sp"
             android:layout_weight="1"
             android:background="@android:drawable/ic_menu_delete"
             android:backgroundTint="#E01313"
