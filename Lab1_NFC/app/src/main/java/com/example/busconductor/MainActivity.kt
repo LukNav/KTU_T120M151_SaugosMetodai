@@ -70,7 +70,7 @@ class MainActivity : AppCompatActivity() {
                 NFCContent!!.text = defaultValueNFCText
                 timer.cancel();
             }
-        }) // write to nfc
+        })
 
         dailyTicket!!.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
@@ -259,7 +259,7 @@ class MainActivity : AppCompatActivity() {
                 if(isDateValid(dateInMiliseconds)) {
                     text = NFCContent!!.text.toString()
                     NFCContent!!.text =
-                        text + "Kauno bileto galiojimo laikas: " + Date(dateInMiliseconds).toString() + "\n"
+                        text + "Kauno bilieto galiojimo laikas: " + Date(dateInMiliseconds).toString() + "\n"
                 }
 
                 blockData = readDataFromBlock(mfc, i, 1)
@@ -267,7 +267,7 @@ class MainActivity : AppCompatActivity() {
                 if(isDateValid(dateInMiliseconds)) {
                     text = NFCContent!!.text.toString()
                     NFCContent!!.text =
-                        text + "Klaipeda bileto galiojimo laikas: " + Date(dateInMiliseconds).toString() + "\n"
+                        text + "Klaipedos bilieto galiojimo laikas: " + Date(dateInMiliseconds).toString() + "\n"
                 }
 
                 blockData = readDataFromBlock(mfc, i, 2)
@@ -275,15 +275,7 @@ class MainActivity : AppCompatActivity() {
                 if(isDateValid(dateInMiliseconds)) {
                     text = NFCContent!!.text.toString()
                     NFCContent!!.text =
-                        text + "Vilnius bileto galiojimo laikas: " + Date(dateInMiliseconds).toString() + "\n"
-                }
-
-                blockData = readDataFromBlock(mfc, i, 3)
-                dateInMiliseconds = bytesToLong(blockData, 0)
-                if(isDateValid(dateInMiliseconds)) {
-                    text = NFCContent!!.text.toString()
-                    NFCContent!!.text =
-                        text + "Siauliai bileto galiojimo laikas: " + Date(dateInMiliseconds).toString() + "\n"
+                        text + "Vilniaus bilieto galiojimo laikas: " + Date(dateInMiliseconds).toString() + "\n"
                 }
             }
             readCredits(mfc)
