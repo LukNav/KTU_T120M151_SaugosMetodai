@@ -1,4 +1,6 @@
-﻿namespace ConsoleApplication
+﻿using System;
+
+namespace ConsoleApplication
 {
     public class Option
     {
