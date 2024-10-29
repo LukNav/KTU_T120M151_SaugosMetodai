@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleApplication
+namespace ConsoleApplication.OptionsMenu.Models
 {
     public class Option
     {

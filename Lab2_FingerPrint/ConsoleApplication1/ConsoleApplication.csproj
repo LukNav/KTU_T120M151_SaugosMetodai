@@ -64,10 +64,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Models\Option.cs" />
+    <Compile Include="FingerprintHandler\Extensions\FingerprintExtensions.cs" />
+    <Compile Include="FingerprintHandler\Models\FingerprintFunction.cs" />
+    <Compile Include="FingerprintHandler\Models\SavedFingerprint.cs" />
+    <Compile Include="OptionsMenu\Models\Option.cs" />
+    <Compile Include="OptionsMenu\OptionMenu.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Helpers\WinBioFuntions.cs" />
+    <Compile Include="Helpers\WinBioFunctions.cs" />
     <Compile Include="Helpers\WinBioHelpers.cs" />
   </ItemGroup>
   <ItemGroup>

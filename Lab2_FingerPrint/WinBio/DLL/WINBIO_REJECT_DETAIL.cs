@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace WinBioWrapper.Types
+﻿namespace WinBioWrapper.DLL
 {
     public enum WINBIO_REJECT_DETAIL : uint
     {
