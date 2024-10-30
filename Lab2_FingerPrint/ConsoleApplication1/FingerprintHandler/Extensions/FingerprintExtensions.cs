@@ -8,8 +8,8 @@ namespace ConsoleApplication.FingerprintHandler.Extensions
 {
     public static class FingerprintExtensions
     {
-        public static FingerprintFunction OpenCalcFunc = new FingerprintFunction("Open calculator", OpenCalc);
-        public static FingerprintFunction PrintHelloFunc = new FingerprintFunction("Print hello", PrintHello);
+        public static FingerprintFunction OpenCalcFunc = new FingerprintFunction("Print Laba", PrintLaba);
+        public static FingerprintFunction PrintHelloFunc = new FingerprintFunction("Print Diena", PrintDiena);
 
         private static List<SavedFingerprint> functionFingerprints = new List<SavedFingerprint>();
 
@@ -109,14 +109,14 @@ namespace ConsoleApplication.FingerprintHandler.Extensions
             function.Action.Invoke();
         }
 
-        private static void OpenCalc()
+        private static void PrintLaba()
         {
-            Process.Start("calc.exe");
+            Console.WriteLine("Laba");
         }
-
-        private static void PrintHello()
+        
+        private static void PrintDiena()
         {
-            Console.WriteLine("Hello");
+            Console.WriteLine("Diena");
         }
     }
 }
