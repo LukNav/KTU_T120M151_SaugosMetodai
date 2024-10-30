@@ -41,6 +41,7 @@ namespace ConsoleApplication.Helpers
         {
             //  Begin enroll
             Console.WriteLine("Selected biometric subtype: " + _subtype.ToString());
+            WinBioFunctions.LocateSensor();
             WinBioHelpers.BringConsoleToFront();
             uint ret = Native.WinBioEnrollBegin(_sessionHandle, _subtype, _unitId);
             if (WinBioHelpers.CheckForErrVal(ret))

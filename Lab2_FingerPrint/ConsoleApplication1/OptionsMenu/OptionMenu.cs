@@ -10,6 +10,8 @@ namespace ConsoleApplication.OptionsMenu
     {
         public static void HostMenu()
         {
+            WinBioFunctions.OpenSession();
+            
             List<Option> mainMenu = GetMenu();
 
             // Set the default index of the selected item to be the first
@@ -51,19 +53,22 @@ namespace ConsoleApplication.OptionsMenu
             while (keyinfo.Key != ConsoleKey.X);
         }
         
-        private static List<Option> GetMenu() => new List<Option>
+        private static List<Option> GetMenu()
         {
-            new Option("Change name", () => ChangeName()),
-            new Option("Assign function", () => AssignFunction()),
-            new Option("Execute function", () => ReadAndExecuteFingerprint()),
-            new Option("Verify", () => VerifyFingerprint()),
-            new Option("Enroll", () => Enroll()),
-            new Option("Delete", () => DeleteFingerprint()),
-            new Option("Exit", () => ExitApplication()),
-                
-            new Option("DEBUG - Add fingerprint", () => Debug_AddFingerprint()),
-            new Option("DEBUG - Execute function", () => Debug_FingerprintFunction()),
-        };
+            return new List<Option>
+            {
+                new Option("Change name", () => ChangeName()),
+                new Option("Assign function", () => AssignFunction()),
+                new Option("Execute function", () => ReadAndExecuteFingerprint()),
+                new Option("Verify", () => VerifyFingerprint()),
+                new Option("Enroll", () => Enroll()),
+                new Option("Delete", () => DeleteFingerprint()),
+                new Option("Exit", () => ExitApplication()),
+
+                new Option("DEBUG - Add fingerprint", () => Debug_AddFingerprint()),
+                new Option("DEBUG - Execute function", () => Debug_FingerprintFunction()),
+            };
+        }
 
         public static void WriteMenu(List<Option> options, Option selectedOption)
         {
@@ -107,7 +112,7 @@ namespace ConsoleApplication.OptionsMenu
             
             Console.WriteLine("Verifying...");
             Guid? fingerprintId = WinBioFunctions.ReadFingerprintId();
-            if (fingerprintId is null)
+            if (fingerprintId == null)
             {
                 return;
             }
@@ -124,7 +129,7 @@ namespace ConsoleApplication.OptionsMenu
             Console.WriteLine("Reading...");
             
             Guid? fingerprintId = WinBioFunctions.ReadFingerprintId();
-            if (fingerprintId is null)
+            if (fingerprintId == null)
             {
                 return;
             }
@@ -154,7 +159,7 @@ namespace ConsoleApplication.OptionsMenu
             }
             
             FingerprintExtensions.ChangeId(index - 1, name);
-            Console.WriteLine($"Name successfully changed to {name}");
+            Console.WriteLine("Name successfully changed to {0}", name);
             
             Console.WriteLine("\nClick 'down' arrow to go back to menu");
         }
@@ -164,8 +169,8 @@ namespace ConsoleApplication.OptionsMenu
             Console.Clear();
             
             Console.WriteLine("Available functions:");
-            Console.WriteLine("1. OpenCalc");
-            Console.WriteLine("2. PrintHello");
+            Console.WriteLine("1. PrintLaba");
+            Console.WriteLine("2. PrintDiena");
             Console.WriteLine("Available fingerprints:");
             FingerprintExtensions.PrintAll();
             Console.WriteLine("Enter index to assign function to");

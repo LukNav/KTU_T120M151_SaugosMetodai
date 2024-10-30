@@ -4,7 +4,7 @@ namespace ConsoleApplication.FingerprintHandler.Models
 {
     public class SavedFingerprint
     {
-        public Guid Id { get; }
+        public Guid Id { get; set; }
         public string Name { get; set; }
         public FingerprintFunction Function { get; set; }
 
@@ -18,9 +18,9 @@ namespace ConsoleApplication.FingerprintHandler.Models
         public override string ToString()
         {
             var nameString = Name == string.Empty ? Id.ToString() : Name;
-            var functionString = Function == null ? "" : Function?.Name == "Empty" ? "" : $". Assigned function: '{Function?.Name}'";
+            var functionString = Function == null ? "" : Function.Name == "Empty" ? "" : ". Assigned function: "+Function.Name;
 
-            return $"{nameString}{functionString}";
+            return nameString+functionString;
         }
     }
 }

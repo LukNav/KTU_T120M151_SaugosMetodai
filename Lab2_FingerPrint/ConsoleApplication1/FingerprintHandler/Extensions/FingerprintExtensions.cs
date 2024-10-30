@@ -8,8 +8,8 @@ namespace ConsoleApplication.FingerprintHandler.Extensions
 {
     public static class FingerprintExtensions
     {
-        public static FingerprintFunction OpenCalcFunc = new FingerprintFunction("Print Laba", PrintLaba);
-        public static FingerprintFunction PrintHelloFunc = new FingerprintFunction("Print Diena", PrintDiena);
+        public static FingerprintFunction PrintLabaFunc = new FingerprintFunction("Print Laba", PrintLaba);
+        public static FingerprintFunction PrintDienaFunc = new FingerprintFunction("Print Diena", PrintDiena);
 
         private static List<SavedFingerprint> functionFingerprints = new List<SavedFingerprint>();
 
@@ -46,20 +46,20 @@ namespace ConsoleApplication.FingerprintHandler.Extensions
 
             switch (functionName)
             {
-                case "OpenCalc":
-                    foreach (var item in functionFingerprints.Where(x => x.Function?.Name == "Open calculator"))
+                case "PrintLaba":
+                    foreach (var item in functionFingerprints.Where(x => x.Function != null && x.Function.Name == "Open calculator"))
                     {
                         item.Function = null;
                     }
-                    function.Function = OpenCalcFunc;
+                    function.Function = PrintLabaFunc;
                     Console.WriteLine("Function successfully assigned");
                     break;
-                case "PrintHello":
-                    foreach (var item in functionFingerprints.Where(x => x.Function?.Name == "Print hello"))
+                case "PrintDiena":
+                    foreach (var item in functionFingerprints.Where(x => x.Function != null && x.Function.Name == "Print hello"))
                     {
                         item.Function = null;
                     }
-                    function.Function = PrintHelloFunc;
+                    function.Function = PrintDienaFunc;
                     Console.WriteLine("Function successfully assigned");
                     break;
                 default:
@@ -79,7 +79,7 @@ namespace ConsoleApplication.FingerprintHandler.Extensions
             {
                 var fingerprintNames = functionFingerprints[i];
 
-                Console.WriteLine($"({i + 1}) {fingerprintNames}");
+                Console.WriteLine("({0}) {1}", i + 1, fingerprintNames);
             }
         }
 

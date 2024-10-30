@@ -4,8 +4,8 @@ namespace ConsoleApplication.FingerprintHandler.Models
 {
     public class FingerprintFunction
     {
-        public string Name { get; }
-        public Action Action { get; }
+        public string Name { get; set; }
+        public Action Action { get; set; }
 
         public FingerprintFunction(string name, Action action)
         {
