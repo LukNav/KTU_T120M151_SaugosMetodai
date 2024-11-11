@@ -22,3 +22,9 @@ C:\Users\navas\Downloads\WinBio-example\WinBio-example\WinBio\obj\Debug\WinBioCs
 C:\Users\navas\Downloads\WinBio-example\WinBio-example\WinBio\obj\Debug\WinBioCsharpWrappers.csproj.CoreCompileInputs.cache
 C:\Users\navas\Downloads\WinBio-example\WinBio-example\WinBio\obj\Debug\WinBioWrapper.dll
 C:\Users\navas\Downloads\WinBio-example\WinBio-example\WinBio\obj\Debug\WinBioWrapper.pdb
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\WinBio\bin\Debug\WinBioWrapper.dll
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\WinBio\bin\Debug\WinBioWrapper.pdb
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\WinBio\obj\Debug\WinBioCsharpWrappers.csproj.AssemblyReference.cache
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\WinBio\obj\Debug\WinBioCsharpWrappers.csproj.CoreCompileInputs.cache
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\WinBio\obj\Debug\WinBioWrapper.dll
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\WinBio\obj\Debug\WinBioWrapper.pdb

@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Runtime.InteropServices;
-using WinBioWrapper.DLL;
+using WinBioWrapper.Types;
 
-namespace WinBioWrapper
+namespace WinBio
 {
      public  class Native
     {

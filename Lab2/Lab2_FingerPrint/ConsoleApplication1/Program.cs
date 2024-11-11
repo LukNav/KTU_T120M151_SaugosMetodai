@@ -1,15 +1,14 @@
-﻿using System;
-using ConsoleApplication.OptionsMenu;
+﻿using ConsoleApplication.Extensions;
+using ConsoleApplication.Options;
 
 namespace ConsoleApplication
 {
-    public class Program
+    class Program
     {
         static void Main(string[] args)
         {
-            OptionMenu.HostMenu();
-
-            Console.ReadKey();
+            WinBioExtensions.OpenSession();
+            OptionMenu.Init();
         }
     }
 }

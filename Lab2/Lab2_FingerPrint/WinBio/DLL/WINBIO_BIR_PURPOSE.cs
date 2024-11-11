@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
-namespace WinBioWrapper.DLL
+namespace WinBioWrapper.Types
 {
     [Flags()]
     public enum WINBIO_BIR_PURPOSE : byte

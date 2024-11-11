@@ -1,6 +1,7 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
 
-namespace WinBioWrapper.DLL
+namespace WinBioWrapper.Types
 {
     [StructLayout(LayoutKind.Sequential)]
     internal struct VERIFY_CALLBACK_CONTEXT

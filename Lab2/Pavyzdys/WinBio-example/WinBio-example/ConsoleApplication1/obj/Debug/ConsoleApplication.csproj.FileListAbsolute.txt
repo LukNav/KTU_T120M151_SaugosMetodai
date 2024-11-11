@@ -63,3 +63,33 @@ C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai-main (1)\KTU_T120M151_Saugos
 C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai-main (1)\KTU_T120M151_SaugosMetodai-main\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\obj\Debug\ConsoleApplication.csproj.CoreCompileInputs.cache
 C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai-main (1)\KTU_T120M151_SaugosMetodai-main\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\obj\Debug\ConsoleApplication.exe
 C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai-main (1)\KTU_T120M151_SaugosMetodai-main\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\obj\Debug\ConsoleApplication.pdb
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\obj\Debug\ConsoleApplication.csproj.AssemblyReference.cache
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\obj\Debug\ConsoleApplication.csproj.CoreCompileInputs.cache
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\ConsoleApplication.exe.config
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\ConsoleApplication.exe
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\ConsoleApplication.pdb
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\WinBioWrapper.dll
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\WinBioWrapper.pdb
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\Newtonsoft.Json.xml
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\obj\Debug\ConsoleA.44DD3A81.Up2Date
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\obj\Debug\ConsoleApplication.exe
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\obj\Debug\ConsoleApplication.pdb
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\System.Buffers.dll
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\System.Memory.dll
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\System.Text.Json.dll
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\System.ValueTuple.dll
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\System.Buffers.xml
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\System.Memory.xml
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\System.Text.Json.xml
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\navas\Downloads\KTU_T120M151_SaugosMetodai\Lab2\Pavyzdys\WinBio-example\WinBio-example\ConsoleApplication1\bin\Debug\System.ValueTuple.xml

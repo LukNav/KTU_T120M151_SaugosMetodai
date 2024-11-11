@@ -1,0 +1,1 @@
+[{"Id":"a9e84d01-1084-4ea7-a17a-3afc4e945b32","Name":"Left index finger","Type":7,"Function":{"Name":"Print Laba","Message":"Laba"}},{"Id":"1f15624d-9a9a-48a8-85d2-ba687f21ff6c","Name":"Left middle finger","Type":8,"Function":null}]

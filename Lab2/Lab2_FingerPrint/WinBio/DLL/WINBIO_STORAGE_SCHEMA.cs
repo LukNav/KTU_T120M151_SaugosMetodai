@@ -1,7 +1,10 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Runtime.InteropServices;
 
-namespace WinBioWrapper.DLL
+namespace WinBioWrapper.Types
 {
     // http://msdn.microsoft.com/en-us/library/dd401663(VS.85).aspx
     [StructLayout(LayoutKind.Sequential)]

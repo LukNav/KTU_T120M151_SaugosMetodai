@@ -1,7 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 using System.Runtime.InteropServices;
+using WinBioWrapper.Types.Internal;
 
-namespace WinBioWrapper.DLL
+namespace WinBioWrapper.Types
 {
     // http://msdn.microsoft.com/en-us/library/dd401657(VS.85).aspx
     

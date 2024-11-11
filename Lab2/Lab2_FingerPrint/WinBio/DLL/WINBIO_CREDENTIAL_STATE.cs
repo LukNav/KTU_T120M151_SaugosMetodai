@@ -1,4 +1,9 @@
-﻿namespace WinBioWrapper.DLL
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace WinBioWrapper.Types
 {
     // http://msdn.microsoft.com/en-us/library/dd401653(VS.85).aspx
     public enum WINBIO_CREDENTIAL_STATE

@@ -1,6 +1,11 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Runtime.InteropServices;
+using WinBioWrapper.Types.Internal;
 
-namespace WinBioWrapper.DLL
+namespace WinBioWrapper.Types
 {
     [StructLayout(LayoutKind.Explicit)]
     internal struct WINBIO_EVENT
