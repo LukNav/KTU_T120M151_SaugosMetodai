@@ -1,0 +1,46 @@
+C:\Users\Janbazi\Desktop\winBio\Bio\Solution4\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Janbazi\Desktop\winBio\Bio\Solution4\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Janbazi\Desktop\winBio\Bio\Solution4\ConsoleApplication1\bin\Debug\WinBioWrapper.dll
+C:\Users\Janbazi\Desktop\winBio\Bio\Solution4\ConsoleApplication1\bin\Debug\WinBioWrapper.pdb
+C:\Users\Janbazi\Desktop\winBio\Bio\Solution4\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Janbazi\Desktop\winBio\Bio\Solution4\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Janbazi\Desktop\winBio\Bio\Solution4\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\Janbazi\Desktop\winBio\Bio\WinBio\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Janbazi\Desktop\winBio\Bio\WinBio\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\Janbazi\Desktop\winBio\Bio\WinBio\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Janbazi\Desktop\winBio\Bio\WinBio\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Janbazi\Desktop\winBio\Bio\WinBio\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Janbazi\Desktop\winBio\Bio\WinBio\ConsoleApplication1\bin\Debug\WinBioWrapper.dll
+C:\Users\Janbazi\Desktop\winBio\Bio\WinBio\ConsoleApplication1\bin\Debug\WinBioWrapper.pdb
+C:\Users\user\Desktop\VSSamples\WinBio.1.1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\user\Desktop\VSSamples\WinBio.1.1\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\user\Desktop\VSSamples\WinBio.1.1\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\user\Desktop\VSSamples\WinBio.1.1\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\user\Desktop\VSSamples\WinBio.1.1\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\user\Desktop\VSSamples\WinBio.1.1\ConsoleApplication1\bin\Debug\WinBioWrapper.dll
+C:\Users\user\Desktop\VSSamples\WinBio.1.1\ConsoleApplication1\bin\Debug\WinBioWrapper.pdb
+C:\Users\user\Desktop\VSSamples\WinBio.1.1\ConsoleApplication1\obj\Debug\ConsoleApplication1.csprojResolveAssemblyReference.cache
+C:\Users\Ignas\Downloads\WinBio-master\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\Users\Ignas\Downloads\WinBio-master\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\Users\Ignas\Downloads\WinBio-master\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\Users\Ignas\Downloads\WinBio-master\ConsoleApplication1\bin\Debug\WinBioWrapper.dll
+C:\Users\Ignas\Downloads\WinBio-master\ConsoleApplication1\bin\Debug\WinBioWrapper.pdb
+C:\Users\Ignas\Downloads\WinBio-master\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.AssemblyReference.cache
+C:\Users\Ignas\Downloads\WinBio-master\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+C:\Users\Ignas\Downloads\WinBio-master\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CopyComplete
+C:\Users\Ignas\Downloads\WinBio-master\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\Users\Ignas\Downloads\WinBio-master\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb
+C:\Users\Ignas\Downloads\WinBio-master\ConsoleApplication1\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Ignas\Downloads\WinBio-master\ConsoleApplication1\bin\Debug\Newtonsoft.Json.xml
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe.config
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\ConsoleApplication1\bin\Debug\ConsoleApplication1.exe
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\ConsoleApplication1\bin\Debug\ConsoleApplication1.pdb
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\ConsoleApplication1\bin\Debug\Newtonsoft.Json.dll
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\ConsoleApplication1\bin\Debug\WinBioWrapper.dll
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\ConsoleApplication1\bin\Debug\WinBioWrapper.pdb
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\ConsoleApplication1\bin\Debug\Newtonsoft.Json.xml
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.AssemblyReference.cache
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CoreCompileInputs.cache
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\ConsoleApplication1\obj\Debug\ConsoleApplication1.csproj.CopyComplete
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\ConsoleApplication1\obj\Debug\ConsoleApplication1.exe
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\ConsoleApplication1\obj\Debug\ConsoleApplication1.pdb

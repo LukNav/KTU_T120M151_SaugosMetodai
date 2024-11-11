@@ -1,0 +1,24 @@
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\WinBio\bin\Debug\WinBioWrapper.dll
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\WinBio\bin\Debug\WinBioWrapper.pdb
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\WinBio\obj\Debug\WinBioCsharpWrappers.csproj.AssemblyReference.cache
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\WinBio\obj\Debug\WinBioCsharpWrappers.csproj.CoreCompileInputs.cache
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\WinBio\obj\Debug\WinBioWrapper.dll
+C:\CloudDrives\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\WinBio\obj\Debug\WinBioWrapper.pdb
+D:\RemoteDisks\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\WinBio\bin\Debug\WinBioWrapper.dll
+D:\RemoteDisks\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\WinBio\bin\Debug\WinBioWrapper.pdb
+D:\RemoteDisks\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\WinBio\obj\Debug\WinBioCsharpWrappers.csproj.AssemblyReference.cache
+D:\RemoteDisks\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\WinBio\obj\Debug\WinBioCsharpWrappers.csproj.CoreCompileInputs.cache
+D:\RemoteDisks\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\WinBio\obj\Debug\WinBioWrapper.dll
+D:\RemoteDisks\OneDrive - Kaunas University of Technology\T120M151_sauga\LB2024\L2\WinBio-master\WinBio\obj\Debug\WinBioWrapper.pdb
+C:\Users\ignplau\Downloads\WinBio-master\WinBio\bin\Debug\WinBioWrapper.dll
+C:\Users\ignplau\Downloads\WinBio-master\WinBio\bin\Debug\WinBioWrapper.pdb
+C:\Users\ignplau\Downloads\WinBio-master\WinBio\obj\Debug\WinBioCsharpWrappers.csproj.AssemblyReference.cache
+C:\Users\ignplau\Downloads\WinBio-master\WinBio\obj\Debug\WinBioCsharpWrappers.csproj.CoreCompileInputs.cache
+C:\Users\ignplau\Downloads\WinBio-master\WinBio\obj\Debug\WinBioWrapper.dll
+C:\Users\ignplau\Downloads\WinBio-master\WinBio\obj\Debug\WinBioWrapper.pdb
+C:\Users\navas\Downloads\WinBio-example\WinBio-example\WinBio\bin\Debug\WinBioWrapper.dll
+C:\Users\navas\Downloads\WinBio-example\WinBio-example\WinBio\bin\Debug\WinBioWrapper.pdb
+C:\Users\navas\Downloads\WinBio-example\WinBio-example\WinBio\obj\Debug\WinBioCsharpWrappers.csproj.AssemblyReference.cache
+C:\Users\navas\Downloads\WinBio-example\WinBio-example\WinBio\obj\Debug\WinBioCsharpWrappers.csproj.CoreCompileInputs.cache
+C:\Users\navas\Downloads\WinBio-example\WinBio-example\WinBio\obj\Debug\WinBioWrapper.dll
+C:\Users\navas\Downloads\WinBio-example\WinBio-example\WinBio\obj\Debug\WinBioWrapper.pdb

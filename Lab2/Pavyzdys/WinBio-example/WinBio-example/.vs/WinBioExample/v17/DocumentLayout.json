@@ -1,0 +1,139 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\navas\\Downloads\\KTU_T120M151_SaugosMetodai-main (1)\\KTU_T120M151_SaugosMetodai-main\\Lab2\\Pavyzdys\\WinBio-example\\WinBio-example\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{15C84143-6DC3-471A-8D51-96DB5C90A155}|ConsoleApplication1\\ConsoleApplication.csproj|c:\\users\\navas\\downloads\\ktu_t120m151_saugosmetodai-main (1)\\ktu_t120m151_saugosmetodai-main\\lab2\\pavyzdys\\winbio-example\\winbio-example\\consoleapplication1\\fingerprint\\fingerprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C84143-6DC3-471A-8D51-96DB5C90A155}|ConsoleApplication1\\ConsoleApplication.csproj|solutionrelative:consoleapplication1\\fingerprint\\fingerprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C84143-6DC3-471A-8D51-96DB5C90A155}|ConsoleApplication1\\ConsoleApplication.csproj|c:\\users\\navas\\downloads\\ktu_t120m151_saugosmetodai-main (1)\\ktu_t120m151_saugosmetodai-main\\lab2\\pavyzdys\\winbio-example\\winbio-example\\consoleapplication1\\extensions\\winbioextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C84143-6DC3-471A-8D51-96DB5C90A155}|ConsoleApplication1\\ConsoleApplication.csproj|solutionrelative:consoleapplication1\\extensions\\winbioextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C84143-6DC3-471A-8D51-96DB5C90A155}|ConsoleApplication1\\ConsoleApplication.csproj|c:\\users\\navas\\downloads\\ktu_t120m151_saugosmetodai-main (1)\\ktu_t120m151_saugosmetodai-main\\lab2\\pavyzdys\\winbio-example\\winbio-example\\consoleapplication1\\optionsmenu\\optionsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C84143-6DC3-471A-8D51-96DB5C90A155}|ConsoleApplication1\\ConsoleApplication.csproj|solutionrelative:consoleapplication1\\optionsmenu\\optionsmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C84143-6DC3-471A-8D51-96DB5C90A155}|ConsoleApplication1\\ConsoleApplication.csproj|c:\\users\\navas\\downloads\\ktu_t120m151_saugosmetodai-main (1)\\ktu_t120m151_saugosmetodai-main\\lab2\\pavyzdys\\winbio-example\\winbio-example\\consoleapplication1\\fingerprint\\fingerprintfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C84143-6DC3-471A-8D51-96DB5C90A155}|ConsoleApplication1\\ConsoleApplication.csproj|solutionrelative:consoleapplication1\\fingerprint\\fingerprintfunction.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C84143-6DC3-471A-8D51-96DB5C90A155}|ConsoleApplication1\\ConsoleApplication.csproj|c:\\users\\navas\\downloads\\ktu_t120m151_saugosmetodai-main (1)\\ktu_t120m151_saugosmetodai-main\\lab2\\pavyzdys\\winbio-example\\winbio-example\\consoleapplication1\\fingerprint\\savedfingerprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C84143-6DC3-471A-8D51-96DB5C90A155}|ConsoleApplication1\\ConsoleApplication.csproj|solutionrelative:consoleapplication1\\fingerprint\\savedfingerprint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C84143-6DC3-471A-8D51-96DB5C90A155}|ConsoleApplication1\\ConsoleApplication.csproj|c:\\users\\navas\\downloads\\ktu_t120m151_saugosmetodai-main (1)\\ktu_t120m151_saugosmetodai-main\\lab2\\pavyzdys\\winbio-example\\winbio-example\\consoleapplication1\\optionsmenu\\option.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C84143-6DC3-471A-8D51-96DB5C90A155}|ConsoleApplication1\\ConsoleApplication.csproj|solutionrelative:consoleapplication1\\optionsmenu\\option.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15C84143-6DC3-471A-8D51-96DB5C90A155}|ConsoleApplication1\\ConsoleApplication.csproj|c:\\users\\navas\\downloads\\ktu_t120m151_saugosmetodai-main (1)\\ktu_t120m151_saugosmetodai-main\\lab2\\pavyzdys\\winbio-example\\winbio-example\\consoleapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15C84143-6DC3-471A-8D51-96DB5C90A155}|ConsoleApplication1\\ConsoleApplication.csproj|solutionrelative:consoleapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Option.cs",
+              "DocumentMoniker": "C:\\Users\\navas\\Downloads\\KTU_T120M151_SaugosMetodai-main (1)\\KTU_T120M151_SaugosMetodai-main\\Lab2\\Pavyzdys\\WinBio-example\\WinBio-example\\ConsoleApplication1\\OptionsMenu\\Option.cs",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\OptionsMenu\\Option.cs",
+              "ToolTip": "C:\\Users\\navas\\Downloads\\KTU_T120M151_SaugosMetodai-main (1)\\KTU_T120M151_SaugosMetodai-main\\Lab2\\Pavyzdys\\WinBio-example\\WinBio-example\\ConsoleApplication1\\OptionsMenu\\Option.cs",
+              "RelativeToolTip": "ConsoleApplication1\\OptionsMenu\\Option.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T14:48:25.058Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SavedFingerprint.cs",
+              "DocumentMoniker": "C:\\Users\\navas\\Downloads\\KTU_T120M151_SaugosMetodai-main (1)\\KTU_T120M151_SaugosMetodai-main\\Lab2\\Pavyzdys\\WinBio-example\\WinBio-example\\ConsoleApplication1\\Fingerprint\\SavedFingerprint.cs",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Fingerprint\\SavedFingerprint.cs",
+              "ToolTip": "C:\\Users\\navas\\Downloads\\KTU_T120M151_SaugosMetodai-main (1)\\KTU_T120M151_SaugosMetodai-main\\Lab2\\Pavyzdys\\WinBio-example\\WinBio-example\\ConsoleApplication1\\Fingerprint\\SavedFingerprint.cs",
+              "RelativeToolTip": "ConsoleApplication1\\Fingerprint\\SavedFingerprint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAsAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T14:47:59.118Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Fingerprint.cs",
+              "DocumentMoniker": "C:\\Users\\navas\\Downloads\\KTU_T120M151_SaugosMetodai-main (1)\\KTU_T120M151_SaugosMetodai-main\\Lab2\\Pavyzdys\\WinBio-example\\WinBio-example\\ConsoleApplication1\\Fingerprint\\Fingerprint.cs",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Fingerprint\\Fingerprint.cs",
+              "ToolTip": "C:\\Users\\navas\\Downloads\\KTU_T120M151_SaugosMetodai-main (1)\\KTU_T120M151_SaugosMetodai-main\\Lab2\\Pavyzdys\\WinBio-example\\WinBio-example\\ConsoleApplication1\\Fingerprint\\Fingerprint.cs",
+              "RelativeToolTip": "ConsoleApplication1\\Fingerprint\\Fingerprint.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAvwBcAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T14:47:09.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FingerprintFunction.cs",
+              "DocumentMoniker": "C:\\Users\\navas\\Downloads\\KTU_T120M151_SaugosMetodai-main (1)\\KTU_T120M151_SaugosMetodai-main\\Lab2\\Pavyzdys\\WinBio-example\\WinBio-example\\ConsoleApplication1\\Fingerprint\\FingerprintFunction.cs",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Fingerprint\\FingerprintFunction.cs",
+              "ToolTip": "C:\\Users\\navas\\Downloads\\KTU_T120M151_SaugosMetodai-main (1)\\KTU_T120M151_SaugosMetodai-main\\Lab2\\Pavyzdys\\WinBio-example\\WinBio-example\\ConsoleApplication1\\Fingerprint\\FingerprintFunction.cs",
+              "RelativeToolTip": "ConsoleApplication1\\Fingerprint\\FingerprintFunction.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T14:46:50.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OptionsMenu.cs",
+              "DocumentMoniker": "C:\\Users\\navas\\Downloads\\KTU_T120M151_SaugosMetodai-main (1)\\KTU_T120M151_SaugosMetodai-main\\Lab2\\Pavyzdys\\WinBio-example\\WinBio-example\\ConsoleApplication1\\OptionsMenu\\OptionsMenu.cs",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\OptionsMenu\\OptionsMenu.cs",
+              "ToolTip": "C:\\Users\\navas\\Downloads\\KTU_T120M151_SaugosMetodai-main (1)\\KTU_T120M151_SaugosMetodai-main\\Lab2\\Pavyzdys\\WinBio-example\\WinBio-example\\ConsoleApplication1\\OptionsMenu\\OptionsMenu.cs",
+              "RelativeToolTip": "ConsoleApplication1\\OptionsMenu\\OptionsMenu.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAowAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T14:39:45.641Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WinBioExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\navas\\Downloads\\KTU_T120M151_SaugosMetodai-main (1)\\KTU_T120M151_SaugosMetodai-main\\Lab2\\Pavyzdys\\WinBio-example\\WinBio-example\\ConsoleApplication1\\Extensions\\WinBioExtensions.cs",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Extensions\\WinBioExtensions.cs",
+              "ToolTip": "C:\\Users\\navas\\Downloads\\KTU_T120M151_SaugosMetodai-main (1)\\KTU_T120M151_SaugosMetodai-main\\Lab2\\Pavyzdys\\WinBio-example\\WinBio-example\\ConsoleApplication1\\Extensions\\WinBioExtensions.cs",
+              "RelativeToolTip": "ConsoleApplication1\\Extensions\\WinBioExtensions.cs",
+              "ViewState": "AgIAAKoAAAAAAAAAAAAAwL4AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T14:36:36.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\navas\\Downloads\\KTU_T120M151_SaugosMetodai-main (1)\\KTU_T120M151_SaugosMetodai-main\\Lab2\\Pavyzdys\\WinBio-example\\WinBio-example\\ConsoleApplication1\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleApplication1\\Program.cs",
+              "ToolTip": "C:\\Users\\navas\\Downloads\\KTU_T120M151_SaugosMetodai-main (1)\\KTU_T120M151_SaugosMetodai-main\\Lab2\\Pavyzdys\\WinBio-example\\WinBio-example\\ConsoleApplication1\\Program.cs",
+              "RelativeToolTip": "ConsoleApplication1\\Program.cs",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAqwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-11T14:30:05.849Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
