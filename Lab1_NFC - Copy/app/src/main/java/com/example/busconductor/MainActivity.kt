@@ -16,10 +16,6 @@ import android.os.CountDownTimer
 import java.lang.Exception
 import java.io.IOException
 import java.util.*
-import java.util.Base64
-import javax.crypto.Cipher
-import javax.crypto.spec.SecretKeySpec
-import android.widget.Toast
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,26 +28,17 @@ class MainActivity : AppCompatActivity() {
     var spinner:Spinner? = null
     var credits:TextView? = null
     var addCredits:Button? = null
-    var changeEncryptionKey:Button? = null
     var dailyTicket:Button? = null
     var oneHourTicket:Button? = null
     var checkTicket:Button? = null
     var creditText:EditText? = null
-    var encryptionKeyText:EditText? = null
     var deleteTickets:ImageButton? = null
 
-    var shouldUpdateEncryptionKey = false
     var shouldUpdateCredits = false
     var shouldBuyDailyTicket = false
     var shouldBuyOneHourTicket = false
     var shouldCheckTicketTime = false
     var shouldDeleteTickets = false
-
-    var encryptionKey: Long = 1234567812345678
-    var encryptionValidationKey: Long = 123456
-    var encryptionPhraseSector = 3;
-    var encryptionPhraseBlock = 1;
-
     var timer:CountDownTimer = object: CountDownTimer(5000, 1000) {
         override fun onTick(millisUntilFinished: Long) {}
 
@@ -67,18 +54,15 @@ class MainActivity : AppCompatActivity() {
         spinner = findViewById(R.id.spinner) as Spinner
         credits = findViewById(R.id.text_view) as TextView
         addCredits = findViewById(R.id.button5) as Button
-        changeEncryptionKey = findViewById(R.id.updateEncryptionKeyButton) as Button
         dailyTicket = findViewById(R.id.button2) as Button
         oneHourTicket = findViewById(R.id.button3) as Button
         checkTicket = findViewById(R.id.button4) as Button
-        creditText = findViewById(R.id.editCreditsText) as EditText
-        encryptionKeyText = findViewById(R.id.editEncryptionkeyText) as EditText
+        creditText = findViewById(R.id.editTextCreditCount) as EditText
         defaultValueNFCText = NFCContent!!.text.toString()
         deleteTickets = findViewById(R.id.deleteButton) as ImageButton
 
         addCredits!!.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
-                shouldUpdateEncryptionKey = false
                 shouldUpdateCredits = true
                 shouldBuyDailyTicket = false
                 shouldBuyOneHourTicket = false
@@ -90,7 +74,6 @@ class MainActivity : AppCompatActivity() {
 
         dailyTicket!!.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
-                shouldUpdateEncryptionKey = false
                 shouldUpdateCredits = false
                 shouldBuyDailyTicket = true
                 shouldBuyOneHourTicket = false
@@ -102,7 +85,6 @@ class MainActivity : AppCompatActivity() {
 
         oneHourTicket!!.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
-                shouldUpdateEncryptionKey = false
                 shouldUpdateCredits = false
                 shouldBuyDailyTicket = false
                 shouldBuyOneHourTicket = true
@@ -114,7 +96,6 @@ class MainActivity : AppCompatActivity() {
 
         checkTicket!!.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
-                shouldUpdateEncryptionKey = false
                 shouldUpdateCredits = false
                 shouldBuyDailyTicket = false
                 shouldBuyOneHourTicket = false
@@ -126,26 +107,11 @@ class MainActivity : AppCompatActivity() {
 
         deleteTickets!!.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
-                shouldUpdateEncryptionKey = false
                 shouldUpdateCredits = false
                 shouldBuyDailyTicket = false
                 shouldBuyOneHourTicket = false
                 shouldCheckTicketTime = false
                 shouldDeleteTickets = true
-                NFCContent!!.text = defaultValueNFCText
-                timer.cancel();
-            }
-        })
-
-
-        changeEncryptionKey!!.setOnClickListener(object : View.OnClickListener {
-            override fun onClick(v: View?) {
-                shouldUpdateEncryptionKey = true
-                shouldUpdateCredits = false
-                shouldBuyDailyTicket = false
-                shouldBuyOneHourTicket = false
-                shouldCheckTicketTime = false
-                shouldDeleteTickets = false
                 NFCContent!!.text = defaultValueNFCText
                 timer.cancel();
             }
@@ -180,47 +146,38 @@ class MainActivity : AppCompatActivity() {
     private fun readFromIntent(intent: Intent) {
         val action = intent.action
         if (NfcAdapter.ACTION_TAG_DISCOVERED == action || NfcAdapter.ACTION_TECH_DISCOVERED == action || NfcAdapter.ACTION_NDEF_DISCOVERED == action) {
-            val raMsgs: Tag? = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG) as Tag?
+            val raMsgs:Tag? = intent.getParcelableExtra(NfcAdapter.EXTRA_TAG) as Tag?
 
             try {
                 val mfc = MifareClassic.get(raMsgs)
                 mfc.connect()
-                if (validateCardEncryption(mfc)) {
-                    cardData(mfc)
-                }
+                cardData(mfc)
+
                 if (shouldUpdateCredits) {
                     shouldUpdateCredits = false
-                    if (validateCardEncryption(mfc)) {
-                        addCredits(mfc, creditText!!.text.toString().toInt())
-                        NFCContent!!.text = defaultValueNFCText
-                    }
+                    addCredits(mfc, creditText!!.text.toString().toInt())
+                    NFCContent!!.text = defaultValueNFCText
                 }
 
                 if (shouldBuyDailyTicket) {
-                    if (validateCardEncryption(mfc)) {
-                        shouldBuyDailyTicket = false
-                        BuyTicket(mfc, 1, true, 10)
-                    }
+                    shouldBuyDailyTicket = false
+                    BuyTicket(mfc, 1, true,10)
                     timer.start()
                 }
 
                 if (shouldBuyOneHourTicket) {
-                    if (validateCardEncryption(mfc)) {
-                        shouldBuyOneHourTicket = false
-                        BuyTicket(mfc, 2, false, 1)
-                    }
+                    shouldBuyOneHourTicket = false
+                    BuyTicket(mfc, 2, false,1)
                     timer.start()
                 }
 
                 if (shouldCheckTicketTime) {
-                    if (validateCardEncryption(mfc)) {
-                        shouldCheckTicketTime = false
-                        var result = checkSelectedCity(mfc)
-                        if (result) {
-                            NFCContent!!.text = "Bilietas galioja"
-                        } else {
-                            NFCContent!!.text = "Galiojančio bilieto nėra"
-                        }
+                    shouldCheckTicketTime = false
+                    var result = checkSelectedCity(mfc)
+                    if (result) {
+                        NFCContent!!.text = "Bilietas galioja"
+                    } else {
+                        NFCContent!!.text = "Galiojančio bilieto nėra"
                     }
                     timer.start()
                 }
@@ -231,25 +188,15 @@ class MainActivity : AppCompatActivity() {
                     cardData(mfc)
                     timer.start()
                 }
-
-                if (shouldUpdateEncryptionKey) {
-                    shouldUpdateEncryptionKey = false
-                    encryptionKey = creditText!!.text.toString().toLong()
-
-                    NFCContent!!.text = "Šifravimo raktas pakeistas"
-                    timer.start()
-                }
-
-            } catch (e: Exception) {
-                Toast.makeText(this, "Dėmėsio! Pridėkite kortelę atgal!", Toast.LENGTH_SHORT)
-                    .show();
+            } catch (e:Exception) {
+                Toast.makeText(this, "Dėmėsio! Pridėkite kortelę atgal!", Toast.LENGTH_SHORT).show();
             }
 
         }
     }
 
-    fun BuyTicket(mfc: MifareClassic, sector: Int, dailyTicket:Boolean, price:Int) {
-
+    fun BuyTicket(mfc: MifareClassic, sector: Int, dailyTicket:Boolean, price:Int)
+    {
         val credits = readCredits(mfc)
         var authA = mfc.authenticateSectorWithKeyA(sector, MifareClassic.KEY_DEFAULT)
         if (authA) {
@@ -260,9 +207,11 @@ class MainActivity : AppCompatActivity() {
                 var dt = Date()
                 val c = Calendar.getInstance()
                 c.time = dt
-                if (dailyTicket) {
+                if(dailyTicket)
+                {
                     c.add(Calendar.HOUR, 24)
-                } else {
+                }
+                else{
                     c.add(Calendar.HOUR, 1)
                 }
                 dt = c.time
@@ -272,11 +221,12 @@ class MainActivity : AppCompatActivity() {
                 decreaseCredits(mfc, price)
                 NFCContent!!.text = "Bilietas nupirktas"
             } else if (Date().time < data) {
-                if (credits >= price) {
+                if(credits >= price) {
                     NFCContent!!.text = "Bilietas vis dar galioja"
-                } else {
-                    NFCContent!!.text =
-                        "Kortelėje trūksta pinigų nupirkti bilietui,\n tačiau tavo bilietas vis dar galioja"
+                }
+                else
+                {
+                    NFCContent!!.text = "Kortelėje trūksta pinigų nupirkti bilietui,\n tačiau tavo bilietas vis dar galioja"
                 }
             } else {
                 NFCContent!!.text = "Kortelėje trūksta pinigų nupirkti bilietui"
@@ -287,54 +237,9 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun validateCardEncryption(mfc: MifareClassic):Boolean {
-        var authA = mfc.authenticateSectorWithKeyA(encryptionPhraseSector, MifareClassic.KEY_DEFAULT)
-        if(authA) {
-            var blockData = readDataFromBlock(mfc, encryptionPhraseSector, encryptionPhraseBlock)
-            var decryptedValidationPhraseBytes = AESUtils.decryptToFixedByteArray(blockData, encryptionKey)
-            var decryptedValidationPhrase = bytesToLong(decryptedValidationPhraseBytes, 0)
-
-            var decryptionSuccess = decryptedValidationPhrase === encryptionValidationKey;
-
-            if(!decryptionSuccess){
-                NFCContent!!.text = "Problema su kortele\n Nepavyko iššifruoti duomenų"
-            }
-           return decryptionSuccess
-        }
-        return false;
-    }
-
-    private fun setupCardEncryptionPhrase(mfc: MifareClassic) {
-        var authA = mfc.authenticateSectorWithKeyA(encryptionPhraseSector, MifareClassic.KEY_DEFAULT)
-        if(authA) {
-
-            var validationPhraseKeyByteArray: ByteArray = ByteArray(16)
-            longToBytes(validationPhraseKeyByteArray, encryptionValidationKey,0);
-            var encryptedValidationKey = AESUtils.encryptToFixedByteArray(validationPhraseKeyByteArray, encryptionKey)
-
-            writeData(mfc, encryptionPhraseSector, encryptionPhraseBlock, encryptedValidationKey)
-        }
-    }
-
     private fun cardData(mfc: MifareClassic)
     {
         NFCContent!!.text = ""
-
-        //val secretKey = ByteArray(16) { it.toByte() } // Example: [0, 1, 2, ..., 15]
-
-
-        // Example plaintext of 16 bytes
-        //val plainText = "Hello, Kotlin!  " // 16 bytes including padding spaces
-        //val plainTextBytes = plainText.toByteArray(Charsets.UTF_8).copyOf(16)
-
-        // Encrypt the 16-byte plaintext
-        //val encryptedBytes = AESUtils.encryptToFixedByteArray(plainTextBytes, encryptionKey)
-        //println("Encrypted Bytes: ${encryptedBytes.joinToString()}")
-
-        // Decrypt the 16-byte encrypted data
-        //val decryptedBytes = AESUtils.decryptToFixedByteArray(encryptedBytes, encryptionKey)
-        //var result = String(decryptedBytes);
-        //println("Decrypted Text: ${result}")
 
         for (i in 1..2){
             var text:String = NFCContent!!.text.toString()
@@ -453,7 +358,6 @@ class MainActivity : AppCompatActivity() {
                     NFCContent!!.text = "Problema su kortele, patikrinti ar kortelė galioja ir nėra pažeista"
                 }
             }
-        setupCardEncryptionPhrase(mfc)
     }
 
     private fun checkSelectedCity(mfc:MifareClassic):Boolean
@@ -515,14 +419,12 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun writeData(mfc:MifareClassic, sector:Int, block:Int, bytes: ByteArray){
-        val encryptedBytes = AESUtils.encryptToFixedByteArray(bytes, encryptionKey)
-
         var bIndex = 0
         var authA = mfc.authenticateSectorWithKeyA(sector, MifareClassic.KEY_DEFAULT)
         if(authA) {
             bIndex = mfc.sectorToBlock(sector);
             var realIndex = bIndex + block
-            mfc.writeBlock(realIndex, encryptedBytes)
+            mfc.writeBlock(realIndex, bytes)
         }
     }
 
@@ -536,7 +438,6 @@ class MainActivity : AppCompatActivity() {
             // 6.3) Read the block
             try {
                 data = mfc.readBlock(realBlockIndex);
-                data = AESUtils.decryptToFixedByteArray(data, encryptionKey);
                 // 7) Convert the data into a string from Hex format.
 
             }catch (ioe:IOException) {
@@ -547,8 +448,8 @@ class MainActivity : AppCompatActivity() {
 
         }
         return data;
-    }
 
+    }
 
     override fun onNewIntent(intent: Intent) {
         setIntent(intent)
@@ -572,92 +473,4 @@ class MainActivity : AppCompatActivity() {
         super.onPause()
     }
 
-}
-
-object AESUtils {
-
-    // Specify the algorithm and transformation
-    private const val ALGORITHM = "AES"
-    private const val TRANSFORMATION = "AES/ECB/NoPadding"
-
-    /**
-     * Encrypts the given plain text with the provided secret key.
-     */
-    fun encrypt(input: String, secretKey: String): String {
-        val cipher = Cipher.getInstance(TRANSFORMATION)
-        val keySpec = SecretKeySpec(secretKey.toByteArray(), ALGORITHM)
-        cipher.init(Cipher.ENCRYPT_MODE, keySpec)
-        val encryptedBytes = cipher.doFinal(input.toByteArray())
-        return Base64.getEncoder().encodeToString(encryptedBytes)
-    }
-
-    /**
-     * Decrypts the given encrypted text with the provided secret key.
-     */
-    fun decrypt(input: String, secretKey: String): String {
-        val cipher = Cipher.getInstance(TRANSFORMATION)
-        val keySpec = SecretKeySpec(secretKey.toByteArray(), ALGORITHM)
-        cipher.init(Cipher.DECRYPT_MODE, keySpec)
-        val decodedBytes = Base64.getDecoder().decode(input)
-        val decryptedBytes = cipher.doFinal(decodedBytes)
-        return String(decryptedBytes)
-    }
-
-    /**
-     * Encrypts the given 16-byte plain text and returns a 16-byte encrypted ByteArray.
-     */
-    fun encryptToFixedByteArray(input: ByteArray, encryptionKey: Long): ByteArray {
-        var secretKey: ByteArray = ByteArray(16)
-        longToBytes(secretKey, encryptionKey, 0)
-
-        require(input.size == 16) { "Input must be exactly 16 bytes." }
-        require(secretKey.size == 16) { "Secret key must be exactly 16 bytes." }
-
-        val cipher = Cipher.getInstance(TRANSFORMATION)
-        val keySpec = SecretKeySpec(secretKey, ALGORITHM)
-        cipher.init(Cipher.ENCRYPT_MODE, keySpec)
-        return cipher.doFinal(input)
-    }
-
-    /**
-     * Decrypts the given 16-byte encrypted data back into the original 16-byte plaintext.
-     */
-    fun decryptToFixedByteArray(input: ByteArray, encryptionKey: Long): ByteArray {
-        var secretKey: ByteArray = ByteArray(16)
-        longToBytes(secretKey, encryptionKey, 0)
-
-        require(input.size == 16) { "Input must be exactly 16 bytes." }
-        require(secretKey.size == 16) { "Secret key must be exactly 16 bytes." }
-
-        val cipher = Cipher.getInstance(TRANSFORMATION)
-        val keySpec = SecretKeySpec(secretKey, ALGORITHM)
-        cipher.init(Cipher.DECRYPT_MODE, keySpec)
-        return cipher.doFinal(input)
-    }
-
-    fun longToBytes(buffer: ByteArray, lng: Long, offset: Int) {
-
-        buffer[offset + 0] = (lng shr 0).toByte()
-        buffer[offset + 1] = (lng shr 8).toByte()
-        buffer[offset + 2] = (lng shr 16).toByte()
-        buffer[offset + 3] = (lng shr 24).toByte()
-        buffer[offset + 4] = (lng shr 32).toByte()
-        buffer[offset + 5] = (lng shr 40).toByte()
-        buffer[offset + 6] = (lng shr 48).toByte()
-        buffer[offset + 7] = (lng shr 56).toByte()
-
-    }
-
-    fun bytesToLong(bytes: ByteArray, offset: Int): Long {
-        return (
-                (bytes[offset + 7].toLong() shl 56) or
-                        (bytes[offset + 6].toLong() and 0xff shl 48) or
-                        (bytes[offset + 5].toLong() and 0xff shl 40) or
-                        (bytes[offset + 4].toLong() and 0xff shl 32) or
-                        (bytes[offset + 3].toLong() and 0xff shl 24) or
-                        (bytes[offset + 2].toLong() and 0xff shl 16) or
-                        (bytes[offset + 1].toLong() and 0xff shl 8) or
-                        (bytes[offset + 0].toLong() and 0xff)
-                )
-    }
 }

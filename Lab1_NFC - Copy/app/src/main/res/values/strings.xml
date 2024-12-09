@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Autobuso Konduktorius</string>
+    <string name="app_name">Laboratorinis darbas</string>
     <string-array name="Spinner_items">
         <item>Kaunas</item>
         <item>Klaipeda</item>
